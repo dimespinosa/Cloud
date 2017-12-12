@@ -62,6 +62,13 @@ public class PersonarolFacadeREST extends AbstractFacade<Personarol> {
         return super.find(id);
     }
 
+//    @GET
+//    @Path("/kkk/{idpersona}")
+//    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+//    public Personarol findpersonarol(@PathParam("idpersona") String id) {
+//        return super.find(id);
+//    }
+
     @GET
     @Override
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
@@ -87,5 +94,5 @@ public class PersonarolFacadeREST extends AbstractFacade<Personarol> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }
